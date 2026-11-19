@@ -21,7 +21,6 @@ int main()
 
 	/* fill the structure */
 	you = fill();
-	//printf("ID %d, Name %c", you.id, you.name);
 
 	/* output the structure */
 	output(you);
@@ -31,9 +30,10 @@ int main()
 
 struct person fill(void)
 {
-	static struct person y;
+	static struct person y; //Static classifier is used in order to retain the value in multiple function calls
+
 	printf("Enter your name: ");
-    fgets(y.name,SIZE,stdin);
+    fgets(y.name,SIZE,stdin); //fgets serves as an alternative in placing user input into a structure
 
 	printf("Enter your ID no.: ");
 	scanf("%d", &y.id);
