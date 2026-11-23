@@ -7,8 +7,8 @@ int main()
 	const char filename[] = "betacopy.txt";
 	struct stat fstat;
 
-	stat(filename,&fstat);
-	printf("%s is %ld bytes long\n",
+	stat(filename, &fstat);
+	printf("%s is %ld bytes long\n", //%ld is byte size
 			filename,
 			fstat.st_size
 		  );

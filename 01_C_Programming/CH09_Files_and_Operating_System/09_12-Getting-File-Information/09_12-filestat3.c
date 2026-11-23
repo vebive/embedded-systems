@@ -18,7 +18,7 @@ int main()
 	}
 
 	/* do something */
-	printf("%-5s %-20s %-10s %s\n","Type","Filename","Size","Timestamp");
+	printf("%-5s %-20s %-10s %s\n", "Type", "Filename", "Size", "Timestamp");
 	while( (file=readdir(directory)) != NULL )
 	{
 		stat(file->d_name,&fstat);
